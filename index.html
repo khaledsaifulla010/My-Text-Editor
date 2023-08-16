@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/857d9d6da6.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-slate-300 mt-20">
+    
+    <main>
+        <section class="bg-sky-300 w-9/12 m-auto mt-4 p-8 rounded-xl ">
+            <h1 class="text-4xl font-black text-center text-white mb-6 ">My Text Editor</h1>
+            <div>
+                <div class="flex items-center justify-around bg-pink-500 p-2 mb-2 rounded-xl">
+                    <div>
+                        <button id="btn-bold"><i class="fa-solid fa-bold text-white "></i></button>
+                        <button id="btn-italic"><i class="fa-solid fa-italic ml-2 text-white"></i></button>
+                        <button id="btn-underline"><i class="fa-solid fa-underline ml-2 text-white"></i></button>
+                    </div>
+                    <div>
+                        <button id="btn-left"><i class="fa-solid fa-align-left text-white"></i></button>
+                        <button id="btn-center"><i class="fa-solid fa-align-center ml-2 text-white"></i></button>
+                        <button id="btn-justify"><i class="fa-solid fa-align-justify ml-2 text-white"></i></button>
+                        <button id="btn-right"><i class="fa-solid fa-align-right ml-2 text-white"></i></button>
+                    </div>
+                    <div>
+                        <button id="btn-font-up"><i class="fa-solid fa-up-long text-white"></i></button>
+                        <button id="btn-font-down"><i class="fa-solid fa-down-long ml-2 text-white"></i></button>
+                        <button id="btn-delete"><i class="fa-solid fa-delete-left ml-2 text-white"></i></button>
+                        
+                        <input id="input-color" class="ml-2 w-5 h-5" type="color">
+
+                        <button id="btn-apply"><i class="fa-solid fa-droplet ml-2 text-white"></i></button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <textarea class="rounded-xl border-solid border-4 border-violet-400 h-80 w-full"
+                    id="text-area-field"></textarea>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
